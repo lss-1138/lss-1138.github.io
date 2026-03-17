@@ -3,595 +3,297 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lin Shengsheng | Academic Homepage</title>
-  <meta
-    name="description"
-    content="Lin Shengsheng is a PhD candidate at South China University of Technology, focusing on time-series forecasting, periodic modeling, and robust multivariate prediction."
-  />
-  <meta property="og:title" content="Lin Shengsheng | Academic Homepage" />
-  <meta
-    property="og:description"
-    content="PhD candidate at SCUT. Research: time-series forecasting, periodic modeling, long-horizon prediction."
-  />
+  <title>Lin Shengsheng | PhD Candidate @ SCUT</title>
+  <meta name="description" content="Official homepage of Lin Shengsheng, PhD candidate at South China University of Technology, focusing on time-series forecasting and machine learning." />
+  <meta property="og:title" content="Lin Shengsheng | PhD Candidate @ SCUT" />
+  <meta property="og:description" content="Research in time-series forecasting, periodic modeling, and robust long-horizon prediction." />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#0f172a" />
+  <meta name="theme-color" content="#0b1220" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #f5f7fb;
-      --surface: #ffffff;
-      --surface-soft: #f8faff;
-      --text: #101828;
-      --text-soft: #475467;
-      --line: #d0d9e8;
-      --primary: #1d4ed8;
-      --primary-soft: #eaf1ff;
-      --accent: #0f766e;
-      --shadow: 0 14px 35px rgba(16, 24, 40, 0.08);
+      --bg: #070c18;
+      --surface: #111a2f;
+      --text: #e6ecff;
+      --muted: #aab7de;
+      --primary: #66a3ff;
+      --primary-2: #75e0ff;
+      --border: rgba(154, 178, 235, 0.25);
+      --shadow: 0 20px 50px rgba(4, 12, 31, 0.45);
       --radius: 18px;
-      --max-w: 1120px;
     }
 
     * { box-sizing: border-box; }
 
-    html { scroll-behavior: smooth; }
-
     body {
       margin: 0;
-      color: var(--text);
       font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
       background:
-        radial-gradient(1200px 450px at 90% -10%, rgba(29, 78, 216, 0.08), transparent 60%),
-        radial-gradient(1000px 450px at 0% 0%, rgba(15, 118, 110, 0.08), transparent 60%),
+        radial-gradient(900px 500px at 100% -10%, rgba(106, 161, 255, 0.2), transparent 60%),
+        radial-gradient(800px 500px at 0% 10%, rgba(122, 225, 255, 0.12), transparent 65%),
         var(--bg);
-      line-height: 1.65;
+      line-height: 1.6;
     }
 
-    a { color: var(--primary); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
     .container {
-      width: min(var(--max-w), calc(100% - 2rem));
+      width: min(1080px, calc(100% - 3rem));
       margin: 0 auto;
     }
 
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      backdrop-filter: blur(10px);
-      background: rgba(245, 247, 251, 0.86);
-      border-bottom: 1px solid rgba(208, 217, 232, 0.7);
+    header {
+      padding: 5.5rem 0 3rem;
     }
 
-    .topbar-inner {
-      height: 66px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
-
-    .brand {
-      font-family: Merriweather, serif;
-      font-size: 1.05rem;
-      font-weight: 700;
-      letter-spacing: 0.01em;
-    }
-
-    .nav {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
-    .nav a {
-      color: #344054;
-      font-size: 0.95rem;
-      padding: 0.3rem 0.55rem;
-      border-radius: 8px;
-    }
-
-    .nav a:hover {
-      background: #eef4ff;
-      text-decoration: none;
-      color: var(--primary);
-    }
-
-    header.hero {
-      padding: 3rem 0 1.2rem;
-    }
-
-    .hero-wrap {
+    .hero {
       display: grid;
-      grid-template-columns: 1.45fr 1fr;
-      gap: 1rem;
+      grid-template-columns: 1.6fr 1fr;
+      gap: 1.5rem;
+      align-items: stretch;
     }
 
     .card {
-      background: var(--surface);
-      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      border: 1px solid var(--border);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
+      backdrop-filter: blur(5px);
     }
 
-    .hero-main {
-      padding: 2rem 2rem 1.8rem;
-    }
+    .hero-main { padding: 2.2rem; }
 
-    .hero-main .label {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.45rem;
-      font-size: 0.82rem;
-      color: var(--primary);
+    .kicker {
+      color: var(--primary-2);
+      font-weight: 600;
+      letter-spacing: .08em;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-weight: 700;
-      background: var(--primary-soft);
-      border: 1px solid #cedcff;
-      border-radius: 999px;
-      padding: 0.32rem 0.7rem;
+      font-size: .82rem;
+      margin-bottom: .6rem;
     }
 
     h1 {
-      margin: 0.95rem 0 0.8rem;
-      font-family: Merriweather, serif;
-      font-size: clamp(2rem, 5vw, 3rem);
-      line-height: 1.18;
-      color: #0b1f44;
-    }
-
-    .hero-summary {
       margin: 0;
-      color: var(--text-soft);
-      max-width: 66ch;
+      line-height: 1.1;
+      font-size: clamp(2.1rem, 5vw, 3.3rem);
     }
 
-    .quick-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.55rem;
-      margin-top: 1rem;
+    .subtitle {
+      color: var(--muted);
+      margin: 1rem 0 1.6rem;
+      max-width: 62ch;
     }
 
-    .quick-tags span {
+    .tags { display: flex; flex-wrap: wrap; gap: .6rem; }
+
+    .tag {
+      border: 1px solid var(--border);
+      color: #d9e5ff;
       border-radius: 999px;
-      padding: 0.26rem 0.74rem;
-      border: 1px solid #dae1ef;
-      background: #fafcff;
-      font-size: 0.83rem;
-      color: #344054;
+      padding: .38rem .8rem;
+      font-size: .85rem;
+      background: rgba(122, 225, 255, 0.05);
     }
 
     .hero-side {
-      padding: 1.5rem;
+      padding: 2rem;
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      justify-content: center;
+      gap: .9rem;
     }
 
     .avatar {
-      width: 86px;
-      height: 86px;
-      border-radius: 20px;
+      width: 92px;
+      height: 92px;
+      border-radius: 24px;
+      background: linear-gradient(145deg, #6ea8ff, #6bdffb);
+      color: #031022;
       display: grid;
       place-items: center;
-      color: #fff;
       font-weight: 800;
-      font-size: 1.25rem;
-      background: linear-gradient(135deg, #2563eb, #0f766e);
-      box-shadow: 0 12px 24px rgba(29, 78, 216, 0.25);
-    }
-
-    .identity h2 {
-      margin: 0;
+      letter-spacing: .02em;
       font-size: 1.2rem;
-      color: #0f1e3a;
+      margin-bottom: .4rem;
     }
 
-    .identity p {
-      margin: 0.2rem 0;
-      font-size: 0.94rem;
-      color: var(--text-soft);
-    }
-
-    .metrics {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0.75rem;
-    }
-
-    .metric {
-      background: var(--surface-soft);
-      border: 1px solid #d9e4fb;
-      border-radius: 12px;
-      padding: 0.7rem 0.8rem;
-    }
-
-    .metric strong {
-      display: block;
-      font-size: 1.03rem;
-      color: #112344;
-    }
-
-    .metric span {
-      display: block;
-      margin-top: 0.15rem;
-      font-size: 0.8rem;
-      color: #667085;
-    }
-
-    section {
-      margin: 1rem 0;
-    }
-
-    .section-title {
-      margin: 0 0 0.75rem;
-      font-size: 1.35rem;
-      color: #0f1e3a;
-    }
-
-    .intro,
-    .timeline,
-    .publications,
-    .highlights,
-    .contact {
-      padding: 1.4rem;
-    }
-
-    .intro p,
-    .timeline p,
-    .contact p {
+    .meta-title {
       margin: 0;
-      color: var(--text-soft);
+      font-weight: 700;
+      font-size: 1.08rem;
     }
 
-    .two-col {
+    .meta-text {
+      margin: 0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .links a {
+      color: var(--primary-2);
+      text-decoration: none;
+      display: inline-block;
+      margin-right: .9rem;
+      margin-top: .2rem;
+    }
+
+    main section { margin: 1.2rem 0; }
+
+    .grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 1rem;
     }
 
-    .timeline .item {
-      border-left: 3px solid #d2defa;
-      padding-left: 0.9rem;
-      margin-bottom: 0.95rem;
+    .panel { padding: 1.5rem; }
+
+    h2 {
+      margin: 0 0 .7rem;
+      font-size: 1.25rem;
     }
 
-    .timeline .item:last-child { margin-bottom: 0; }
+    p { margin: 0; }
 
-    .timeline .item h3 {
-      margin: 0;
-      font-size: 1rem;
-      color: #142850;
-    }
-
-    .timeline .item .meta {
-      margin: 0.2rem 0 0;
-      color: #667085;
-      font-size: 0.88rem;
-    }
-
-    .timeline .item .desc {
-      margin-top: 0.3rem;
-      color: #475467;
-      font-size: 0.92rem;
-    }
-
-    .pub-list {
+    .research-list {
       display: grid;
-      gap: 0.8rem;
+      gap: 1rem;
     }
 
-    .pub {
-      border: 1px solid #d7e0f0;
+    .paper {
+      padding: 1.3rem;
       border-radius: 14px;
-      padding: 1rem;
-      background: linear-gradient(180deg, #ffffff, #fbfdff);
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.02);
     }
 
-    .badge {
+    .paper h3 {
+      margin: 0 0 .45rem;
+      font-size: 1.04rem;
+    }
+
+    .venue {
       display: inline-block;
-      padding: 0.18rem 0.58rem;
+      font-size: .78rem;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: #cbe0ff;
+      background: rgba(102,163,255,0.17);
+      border: 1px solid rgba(121, 169, 255, 0.4);
       border-radius: 999px;
-      font-size: 0.74rem;
-      letter-spacing: 0.07em;
-      text-transform: uppercase;
-      font-weight: 700;
-      margin-bottom: 0.45rem;
+      padding: .16rem .58rem;
+      margin-bottom: .6rem;
     }
 
-    .badge.oral {
-      color: #0c4a6e;
-      border: 1px solid #bae6fd;
-      background: #ecfeff;
-    }
-
-    .badge.spotlight {
-      color: #7c2d12;
-      border: 1px solid #fdba74;
-      background: #fff7ed;
-    }
-
-    .badge.regular {
-      color: #14532d;
-      border: 1px solid #bbf7d0;
-      background: #f0fdf4;
-    }
-
-    .pub h3 {
-      margin: 0 0 0.35rem;
-      font-size: 1.05rem;
-      color: #0f1e3a;
-    }
-
-    .pub p {
-      margin: 0;
-      color: var(--text-soft);
-      font-size: 0.93rem;
-    }
-
-    .highlight-list {
-      margin: 0;
-      padding-left: 1.2rem;
-      color: #475467;
-    }
-
-    .highlight-list li + li { margin-top: 0.52rem; }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 0.8rem;
-      margin-top: 0.8rem;
-    }
-
-    .contact-card {
-      border: 1px solid #d9e3f2;
-      border-radius: 12px;
-      padding: 0.8rem;
-      background: #fcfdff;
-    }
-
-    .contact-card .k {
-      margin: 0;
-      font-size: 0.8rem;
-      color: #667085;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      font-weight: 700;
-    }
-
-    .contact-card .v {
-      margin: 0.22rem 0 0;
-      color: #0f1e3a;
-      word-break: break-all;
-      font-size: 0.9rem;
-    }
+    .muted { color: var(--muted); }
 
     footer {
+      color: var(--muted);
       text-align: center;
-      color: #667085;
-      font-size: 0.86rem;
-      padding: 2rem 0 2.6rem;
+      padding: 2rem 0 2.7rem;
+      font-size: .9rem;
     }
 
-    @media (max-width: 980px) {
-      .hero-wrap,
-      .two-col,
-      .contact-grid {
+    @media (max-width: 930px) {
+      .hero,
+      .grid {
         grid-template-columns: 1fr;
       }
-
-      .topbar-inner {
-        height: auto;
-        padding: 0.7rem 0;
-        align-items: flex-start;
-        flex-direction: column;
-      }
+      header { padding-top: 3.5rem; }
+      .container { width: min(1080px, calc(100% - 2rem)); }
     }
   </style>
 </head>
 <body>
-  <nav class="topbar">
-    <div class="container topbar-inner">
-      <div class="brand">Lin Shengsheng · Homepage</div>
-      <div class="nav">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#publications">Publications</a>
-        <a href="#highlights">Highlights</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </nav>
-
-  <header class="hero">
-    <div class="container hero-wrap">
+  <header>
+    <div class="container hero">
       <article class="card hero-main">
-        <span class="label">PhD Candidate @ SCUT</span>
-        <h1>Lin Shengsheng (林升升)</h1>
-        <p class="hero-summary">
-          I am a PhD candidate at the School of Computer Science and Engineering, South China University of Technology.
-          My research centers on time-series forecasting, especially periodic-pattern modeling, long-horizon prediction,
-          and robust multivariate dependency learning. I enjoy building methods that are both theoretically motivated and
-          practically deployable in real-world industrial scenarios.
+        <p class="kicker">Personal Homepage</p>
+        <h1>Lin Shengsheng</h1>
+        <p class="subtitle">
+          I am a PhD candidate at the <strong>School of Computer Science and Engineering, South China University of Technology (SCUT)</strong>.
+          My research focuses on <strong>time-series forecasting</strong>, with special interests in periodic pattern modeling,
+          long-horizon prediction, and robust multivariate dependency learning.
         </p>
-        <div class="quick-tags">
-          <span>Time-Series Forecasting</span>
-          <span>Periodic Structure Learning</span>
-          <span>Long-Term Prediction</span>
-          <span>Robust Generalization</span>
+        <div class="tags">
+          <span class="tag">Time-Series Forecasting</span>
+          <span class="tag">Periodic Modeling</span>
+          <span class="tag">Long-Horizon Prediction</span>
+          <span class="tag">Multivariate Learning</span>
         </div>
       </article>
 
       <aside class="card hero-side">
         <div class="avatar" aria-hidden="true">LS</div>
-        <div class="identity">
-          <h2>Academic Profile</h2>
-          <p>School of Computer Science and Engineering, SCUT</p>
-          <p>Guangzhou, China</p>
-        </div>
-
-        <div class="metrics">
-          <div class="metric">
-            <strong>CCF-A Papers</strong>
-            <span>3 top-tier conference papers</span>
-          </div>
-          <div class="metric">
-            <strong>Google Scholar</strong>
-            <span>800+ citations (as shared)</span>
-          </div>
-          <div class="metric">
-            <strong>GitHub</strong>
-            <span>700+ stars (as shared)</span>
-          </div>
-          <div class="metric">
-            <strong>Research Focus</strong>
-            <span>Forecasting & representation</span>
-          </div>
+        <p class="meta-title">Lin Shengsheng (林升升)</p>
+        <p class="meta-text">PhD Candidate, South China University of Technology</p>
+        <p class="meta-text">Based in Guangzhou, China</p>
+        <div class="links">
+          <a href="https://github.com/lss-1138" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://scholar.google.com.hk/citations?user=_qbjJbAAAAAJ&hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>
         </div>
       </aside>
     </div>
   </header>
 
   <main class="container">
-    <section id="about" class="card intro">
-      <h2 class="section-title">About</h2>
-      <p>
-        I work on machine learning methods for time-series data. My main line of research is to improve forecasting
-        reliability under long horizons and complex periodic dynamics. I am particularly interested in designing lightweight,
-        interpretable, and robust models that can transfer from benchmark datasets to large-scale industry systems.
-      </p>
-    </section>
-
-    <section class="two-col">
-      <article id="education" class="card timeline">
-        <h2 class="section-title">Education</h2>
-        <div class="item">
-          <h3>South China University of Technology · PhD in Computer Science and Engineering</h3>
-          <p class="meta">Sep 2022 – Jul 2027 (Expected) · Guangzhou</p>
-          <p class="desc">
-            Focus on time-series forecasting and periodic modeling. Recognized by major scholarships and innovation awards.
-          </p>
-        </div>
-        <div class="item">
-          <h3>South China University of Technology · BEng in Computer Science and Technology</h3>
-          <p class="meta">Sep 2018 – Jul 2022 · Guangzhou</p>
-          <p class="desc">
-            Graduated with strong academic standing and honors. Built solid foundations in machine learning and systems.
-          </p>
-        </div>
+    <section class="grid">
+      <article class="card panel">
+        <h2>Academic Snapshot</h2>
+        <p class="muted">PhD in Computer Science and Engineering, SCUT (2022–2027 expected).</p>
       </article>
-
-      <article class="card timeline">
-        <h2 class="section-title">Industry Experience</h2>
-        <div class="item">
-          <h3>Didi Chuxing · MPT Algorithm Intern</h3>
-          <p class="meta">Dec 2025 – Feb 2026 · Beijing</p>
-          <p class="desc">
-            Optimized supply-demand forecasting pipelines and improved model efficiency in business-oriented scenarios.
-          </p>
-        </div>
-        <div class="item">
-          <h3>Tencent TEG · Backend Development Intern</h3>
-          <p class="meta">Jul 2021 – Sep 2021 · Shenzhen</p>
-          <p class="desc">
-            Developed backend services and tools with practical engineering stacks for internal systems.
-          </p>
-        </div>
+      <article class="card panel">
+        <h2>Research Outcomes</h2>
+        <p class="muted">3 CCF-A conference papers (including ICML Oral, NeurIPS Spotlight, ICML) and multiple high-quality SCI publications.</p>
+      </article>
+      <article class="card panel">
+        <h2>Industry Impact</h2>
+        <p class="muted">Core forecasting methods adopted in real-world ride-hailing supply-demand prediction pipelines.</p>
       </article>
     </section>
 
-    <section id="publications" class="card publications">
-      <h2 class="section-title">Selected Publications</h2>
-      <div class="pub-list">
-        <article class="pub">
-          <span class="badge oral">ICML Oral</span>
+    <section class="card panel">
+      <h2>Selected Publications</h2>
+      <div class="research-list">
+        <article class="paper">
+          <span class="venue">ICML Oral</span>
           <h3>SparseTSF</h3>
-          <p>
-            Introduced a cross-period sparse forecasting technique that dramatically reduces model parameters (down to ~1,000)
-            while strengthening long-horizon dependency modeling. As an implicit regularization mechanism, it improves both
-            robustness and generalization. The approach has been applied as a core model in Didi ride-hailing demand-supply forecasting.
+          <p class="muted">
+            Proposed a cross-period sparse forecasting framework that dramatically reduces model size (as low as 1,000 parameters)
+            while improving long-range dependency modeling. The sparse design also acts as implicit regularization,
+            enhancing robustness and generalization. The method has been deployed as a core model in Didi’s
+            ride-hailing supply-demand forecasting workflow.
           </p>
         </article>
 
-        <article class="pub">
-          <span class="badge spotlight">NeurIPS Spotlight</span>
+        <article class="paper">
+          <span class="venue">NeurIPS Spotlight</span>
           <h3>CycleNet</h3>
-          <p>
-            Proposed explicit periodic-pattern modeling for time-series forecasting. Through cycle-residual decomposition,
-            the model first captures periodic components and then models residual components more effectively,
-            improving predictive accuracy and interpretability.
+          <p class="muted">
+            Introduced explicit periodic-pattern modeling for time-series data to better utilize cyclical structure.
+            Through a cycle-residual decomposition strategy, the model captures periodic components first and then
+            learns residuals more effectively, improving both forecasting performance and interpretability.
           </p>
         </article>
 
-        <article class="pub">
-          <span class="badge regular">ICML</span>
+        <article class="paper">
+          <span class="venue">ICML</span>
           <h3>TQNet</h3>
-          <p>
-            Proposed temporal query learning for multivariate forecasting. By modeling global periodic patterns,
-            TQNet offers more robust dependency learning across variables and better overall multivariate forecasting performance.
+          <p class="muted">
+            Proposed a temporal query mechanism that models global periodic patterns to support more robust multivariate
+            dependency learning, leading to improved multivariate forecasting ability.
           </p>
         </article>
-      </div>
-    </section>
-
-    <section id="highlights" class="card highlights">
-      <h2 class="section-title">Highlights</h2>
-      <ul class="highlight-list">
-        <li>Published 3 CCF-A conference papers, including an ICML Oral, a NeurIPS Spotlight, and an ICML regular paper.</li>
-        <li>Published multiple high-quality SCI journal papers and contributed to additional CCF-A journal collaborations.</li>
-        <li>Filed multiple invention patents, with part of them authorized and others under review.</li>
-        <li>Research emphasizes both scientific novelty and practical deployment value in industrial forecasting systems.</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="card contact">
-      <h2 class="section-title">Contact & Links</h2>
-      <p>If you are interested in collaboration, opportunities, or academic discussion, feel free to reach out.</p>
-      <div class="contact-grid">
-        <div class="contact-card">
-          <p class="k">Email</p>
-          <p class="v">linss2000@foxmail.com</p>
-        </div>
-        <div class="contact-card">
-          <p class="k">GitHub</p>
-          <p class="v"><a href="https://github.com/lss-1138" target="_blank" rel="noopener">github.com/lss-1138</a></p>
-        </div>
-        <div class="contact-card">
-          <p class="k">Google Scholar</p>
-          <p class="v"><a href="https://scholar.google.com.hk/citations?user=_qbjJbAAAAAJ&hl=zh-CN" target="_blank" rel="noopener">Scholar Profile</a></p>
-        </div>
-        <div class="contact-card">
-          <p class="k">Zhihu</p>
-          <p class="v"><a href="https://www.zhihu.com/people/89-41-88-71-57" target="_blank" rel="noopener">Zhihu Homepage</a></p>
-        </div>
-        <div class="contact-card">
-          <p class="k">Location</p>
-          <p class="v">Guangzhou, China</p>
-        </div>
-        <div class="contact-card">
-          <p class="k">Status</p>
-          <p class="v">Open to research collaborations</p>
-        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    © <span id="year"></span> Lin Shengsheng · Last updated for a modern academic profile page.
+    © <span id="year"></span> Lin Shengsheng · Built with HTML/CSS for a clean, modern academic presence.
   </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
