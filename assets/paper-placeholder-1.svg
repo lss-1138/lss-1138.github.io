@@ -1,0 +1,10 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="750" fill="#F4F7FB"/>
+  <rect x="72" y="72" width="1056" height="606" rx="28" fill="#E7EEF7"/>
+  <path d="M156 568C270.213 400.919 421.161 317.378 608.844 317.378C796.527 317.378 941.579 400.919 1044 568" stroke="#0F3D75" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="310" cy="389" r="30" fill="#0F3D75"/>
+  <circle cx="600" cy="317" r="30" fill="#0F3D75"/>
+  <circle cx="892" cy="389" r="30" fill="#0F3D75"/>
+  <text x="120" y="170" fill="#0F3D75" font-family="Arial, sans-serif" font-size="42" font-weight="700">Paper Thumbnail</text>
+  <text x="120" y="224" fill="#33506F" font-family="Arial, sans-serif" font-size="28">Replace with SparseTSF figure or teaser image</text>
+</svg>

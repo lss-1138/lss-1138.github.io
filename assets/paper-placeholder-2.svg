@@ -1,0 +1,8 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="750" fill="#F4F7FB"/>
+  <rect x="72" y="72" width="1056" height="606" rx="28" fill="#E7EEF7"/>
+  <path d="M168 526C259.762 422.423 347.848 370.635 432.259 370.635C516.67 370.635 604.756 422.423 696.518 526C788.28 422.423 876.366 370.635 960.777 370.635" stroke="#0F3D75" stroke-width="20" stroke-linecap="round" stroke-dasharray="4 28"/>
+  <path d="M166 528C257.762 424.423 345.848 372.635 430.259 372.635C514.67 372.635 602.756 424.423 694.518 528" stroke="#5F87B7" stroke-width="24" stroke-linecap="round"/>
+  <text x="120" y="170" fill="#0F3D75" font-family="Arial, sans-serif" font-size="42" font-weight="700">Paper Thumbnail</text>
+  <text x="120" y="224" fill="#33506F" font-family="Arial, sans-serif" font-size="28">Replace with CycleNet figure or teaser image</text>
+</svg>
