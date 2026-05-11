@@ -783,10 +783,14 @@ a {
 }
 
 .awards-list li {
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.5rem;
   font-size: 1rem;
   color: var(--text);
   font-family: "Times New Roman", Times, serif;
+}
+
+.awards-list strong {
+  font-size: 1rem;
 }
 
 .site-footer {
