@@ -506,6 +506,10 @@ a {
   align-items: start;
 }
 
+.paper-body-wide-figure {
+  grid-template-columns: 240px minmax(0, 1fr);
+}
+
 .paper-thumb {
   width: 100%;
   aspect-ratio: 16 / 10;
@@ -514,6 +518,10 @@ a {
   border: 1px solid var(--line-soft);
   background: #fff;
   cursor: zoom-in;
+}
+
+.paper-thumb-wide {
+  aspect-ratio: 960 / 511;
 }
 
 .paper-content {

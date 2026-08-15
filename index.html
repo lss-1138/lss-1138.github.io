@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260815-2" />
   </head>
   <body>
     <main class="page-shell container" id="top">
@@ -35,7 +35,7 @@
           </div>
           <div>
             <dt>Highlights</dt>
-            <dd>Oral / Spotlight / TPAMI</dd>
+            <dd>Oral / Spotlight / TPAMI / ESI Highly Cited Paper</dd>
           </div>
           <div>
             <dt>First-Author Papers</dt>
@@ -43,7 +43,7 @@
           </div>
           <div>
             <dt>Google Scholar</dt>
-            <dd>1000+ Citations</dd>
+            <dd>1100+ Citations</dd>
           </div>
         </dl>
         <div class="intro-side-links" id="contact">
@@ -87,30 +87,102 @@
               whose research focuses on cloud computing and big data.
             </p>
             <p class="intro-paragraph">
-              His research lies at the intersection of time series forecasting
-              and general-purpose AI. He focuses on efficient forecasting
-              architectures, periodicity-aware modeling, and multivariate
-              dependency learning, while also exploring large language models
-              and multimodal methods for temporal data. His recent works
+              His research spans time series forecasting and post-training for
+              large language models. In time series, he studies efficient
+              forecasting architectures, periodicity-aware modeling, and
+              multivariate dependency learning. His representative works
               include
               <a href="https://ieeexplore.ieee.org/abstract/document/11141354" target="_blank" rel="noreferrer">SparseTSF</a>,
               <a href="https://arxiv.org/pdf/2409.18479" target="_blank" rel="noreferrer">CycleNet</a>,
               <a href="https://github.com/lss-1138/SegRNN" target="_blank" rel="noreferrer">SegRNN</a>,
               and
               <a href="https://arxiv.org/pdf/2505.12917" target="_blank" rel="noreferrer">TQNet</a>.
+              More recently, he has been working on post-training for coding
+              models, with interests in training data construction, verifiable
+              reward design, multi-expert model integration (MOPD), training,
+              and evaluation.
             </p>
             <div class="interest-block">
               <p class="interest-title">Research interests</p>
               <ul class="interest-list">
+                <li>LLM post-training for code generation and software engineering</li>
+                <li>Training data, verifiable rewards, and evaluation for coding models</li>
+                <li>Multi-expert learning and model integration</li>
                 <li>Efficient architectures for time series forecasting</li>
-                <li>Periodicity-aware learning and temporal pattern analysis</li>
-                <li>Multivariate dependency learning for realistic forecasting</li>
-                <li>Large-scale foundation models for time series</li>
-                <li>Multimodal learning across time series, text, and vision</li>
+                <li>Periodicity-aware and multivariate temporal modeling</li>
               </ul>
             </div>
           </div>
         </section>
+
+      <section class="section section-divider" id="experience">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Experience</p>
+            <h2>Industry and Engineering Practice</h2>
+          </div>
+          <div class="experience-list">
+            <article class="experience-entry">
+              <img
+                class="experience-logo"
+                src="assets/weixin-logo-horizontal.png"
+                alt="Weixin logo"
+              />
+              <div class="experience-content">
+                <h3>Tencent · WXG</h3>
+                <p class="experience-date">Jun. 2026 - Present</p>
+                <p class="experience-role">LLM Coding Post-Training Intern</p>
+                <p class="experience-desc">
+                  Conducting research and post-training for WeChat Mini Program
+                  coding models, aiming to turn a user's one-sentence request
+                  into a complete, functional Mini Program. Improving model
+                  capabilities through multi-expert model integration (MOPD),
+                  covering training data processing, verifiable reward design,
+                  model training, and evaluation.
+                </p>
+              </div>
+            </article>
+            <article class="experience-entry">
+              <img
+                class="experience-logo"
+                src="assets/didi-logo.svg"
+                alt="Didi Chuxing logo"
+              />
+              <div class="experience-content">
+                <h3>Didi · MPT</h3>
+                <p class="experience-date">Dec. 2025 - May 2026</p>
+                <p class="experience-role">Elite Program Algorithm Intern, Supply-Demand Scheduling Strategy Team</p>
+                <p class="experience-desc">
+                  Optimized supply-demand forecasting models based on
+                  SparseTSF to address the high complexity of temporal
+                  dependency modeling in the original production system.
+                  Improved core business forecasting accuracy by 7%, reduced
+                  parameter count by 90%, and accelerated training by 5x,
+                  substantially speeding up model iteration and deployment.
+                </p>
+              </div>
+            </article>
+            <article class="experience-entry">
+              <img
+                class="experience-logo"
+                src="assets/tencent-logo.avif"
+                alt="Tencent logo"
+              />
+              <div class="experience-content">
+                <h3>Tencent · TEG</h3>
+                <p class="experience-date">Jul. 2021 - Sep. 2021</p>
+                <p class="experience-role">Backend Development Intern, R&amp;D Management Department</p>
+                <p class="experience-desc">
+                  Developed backend services in Go using Gin, Docker, Nginx,
+                  Redis, Kafka, and XORM. Built and maintained scheduled-task
+                  interfaces and developed CLI tools with Cobra for unified
+                  task management.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
       <section class="section section-divider" id="papers">
         <div class="container">
@@ -224,6 +296,41 @@
                 <a href="https://zhuanlan.zhihu.com/p/1908842630466471890" target="_blank" rel="noreferrer">Blog [Chinese]</a>
               </div>
             </article>
+
+            <article class="paper-item">
+              <div class="paper-head">
+                <div class="paper-meta-line">
+                  <span class="badge">IEEE IoT-J</span>
+                  <span class="paper-year">2026</span>
+                </div>
+                <a class="paper-corner-badge" href="https://github.com/lss-1138/SegRNN" target="_blank" rel="noreferrer">
+                  <img alt="GitHub stars for SegRNN" src="https://img.shields.io/github/stars/lss-1138/SegRNN?style=social" />
+                </a>
+              </div>
+              <div class="paper-body paper-body-wide-figure">
+                <img
+                  class="paper-thumb paper-thumb-wide"
+                  src="assets/segrnn-model-architecture.png?v=20260815"
+                  alt="Model architecture of SegRNN"
+                  data-fullsrc="assets/segrnn-model-architecture.png?v=20260815"
+                />
+                <div class="paper-content">
+                  <h3>SegRNN: Segment Recurrent Neural Network for Long-Term Time Series Forecasting</h3>
+                  <p class="paper-summary">
+                    Recasts RNN-based long-term forecasting through
+                    segment-wise iterations and parallel multi-step
+                    forecasting, enabling a single-layer GRU to achieve strong
+                    accuracy while reducing training time and memory usage by
+                    more than 78%.
+                  </p>
+                </div>
+              </div>
+              <div class="link-row">
+                <a href="https://ieeexplore.ieee.org/document/11313095" target="_blank" rel="noreferrer">Paper</a>
+                <a href="https://github.com/lss-1138/SegRNN" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://arxiv.org/pdf/2308.11200" target="_blank" rel="noreferrer">arXiv</a>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -267,70 +374,6 @@
                   Built a systematic foundation in computer science, including
                   computer systems, computer networks, software engineering,
                   and core algorithmic training.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-divider" id="experience">
-        <div class="container">
-          <div class="section-heading">
-            <p class="section-kicker">Experience</p>
-            <h2>Industry and Engineering Practice</h2>
-          </div>
-          <div class="experience-list">
-            <article class="experience-entry">
-              <img
-                class="experience-logo"
-                src="assets/tencent-logo.avif"
-                alt="Tencent logo"
-              />
-              <div class="experience-content">
-                <h3>Tencent · WXG</h3>
-                <p class="experience-date">Jun. 2026 - Present</p>
-                <p class="experience-role">LLM Coding Post-Training Intern</p>
-                <p class="experience-desc">
-                  Working on post-training for LLM coding capabilities.
-                </p>
-              </div>
-            </article>
-            <article class="experience-entry">
-              <img
-                class="experience-logo"
-                src="assets/didi-logo.svg"
-                alt="Didi Chuxing logo"
-              />
-              <div class="experience-content">
-                <h3>Didi · MPT</h3>
-                <p class="experience-date">Dec. 2025 - May 2026</p>
-                <p class="experience-role">Elite Program Algorithm Intern, Supply-Demand Scheduling Strategy Team</p>
-                <p class="experience-desc">
-                  Optimized supply-demand forecasting models based on
-                  SparseTSF to address the high complexity of temporal
-                  dependency modeling in the original production system.
-                  Improved core business forecasting accuracy by 7%, reduced
-                  parameter count by 90%, and accelerated training by 5x,
-                  substantially speeding up model iteration and deployment.
-                </p>
-              </div>
-            </article>
-            <article class="experience-entry">
-              <img
-                class="experience-logo"
-                src="assets/tencent-logo.avif"
-                alt="Tencent logo"
-              />
-              <div class="experience-content">
-                <h3>Tencent · TEG</h3>
-                <p class="experience-date">Jul. 2021 - Sep. 2021</p>
-                <p class="experience-role">Backend Development Intern, R&amp;D Management Department</p>
-                <p class="experience-desc">
-                  Developed backend services in Go using Gin, Docker, Nginx,
-                  Redis, Kafka, and XORM. Built and maintained scheduled-task
-                  interfaces and developed CLI tools with Cobra for unified
-                  task management.
                 </p>
               </div>
             </article>
