@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260815-2" />
+    <link rel="stylesheet" href="styles.css?v=20260912" />
   </head>
   <body>
     <main class="page-shell container" id="top">
@@ -83,34 +83,22 @@
               Shengsheng Lin (林升升) is a Ph.D. student in Computer Science at South
               China University of Technology and is expected to graduate in June
               2027. He is advised by
-              <a href="https://scholar.google.com.hk/citations?user=IWsha94AAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Prof. Weiwei Lin</a>,
-              whose research focuses on cloud computing and big data.
-            </p>
-            <p class="intro-paragraph">
-              His research spans time series forecasting and post-training for
-              large language models. In time series, he studies efficient
-              forecasting architectures, periodicity-aware modeling, and
-              multivariate dependency learning. His representative works
-              include
-              <a href="https://ieeexplore.ieee.org/abstract/document/11141354" target="_blank" rel="noreferrer">SparseTSF</a>,
-              <a href="https://arxiv.org/pdf/2409.18479" target="_blank" rel="noreferrer">CycleNet</a>,
-              <a href="https://github.com/lss-1138/SegRNN" target="_blank" rel="noreferrer">SegRNN</a>,
-              and
-              <a href="https://arxiv.org/pdf/2505.12917" target="_blank" rel="noreferrer">TQNet</a>.
-              More recently, he has been working on post-training for coding
-              models, with interests in training data construction, verifiable
-              reward design, multi-expert model integration (MOPD), training,
-              and evaluation.
+              <a href="https://scholar.google.com.hk/citations?user=IWsha94AAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Prof. Weiwei Lin</a>.
             </p>
             <div class="interest-block">
               <p class="interest-title">Research interests</p>
-              <ul class="interest-list">
-                <li>LLM post-training for code generation and software engineering</li>
-                <li>Training data, verifiable rewards, and evaluation for coding models</li>
-                <li>Multi-expert learning and model integration</li>
-                <li>Efficient architectures for time series forecasting</li>
-                <li>Periodicity-aware and multivariate temporal modeling</li>
-              </ul>
+              <div class="interest-grid">
+                <div class="interest-group">
+                  <h3>LLM Post-Training</h3>
+                  <p>Code generation · Reinforcement learning · Verifiable
+                    rewards · Multi-expert distillation</p>
+                </div>
+                <div class="interest-group">
+                  <h3>Time Series Forecasting</h3>
+                  <p>Efficient architectures · Periodicity-aware learning ·
+                    Multivariate modeling</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -130,16 +118,32 @@
               />
               <div class="experience-content">
                 <h3>Tencent · WXG</h3>
-                <p class="experience-date">Jun. 2026 - Present</p>
-                <p class="experience-role">LLM Coding Post-Training Intern</p>
-                <p class="experience-desc">
-                  Conducting research and post-training for WeChat Mini Program
-                  coding models, aiming to turn a user's one-sentence request
-                  into a complete, functional Mini Program. Improving model
-                  capabilities through multi-expert model integration (MOPD),
-                  covering training data processing, verifiable reward design,
-                  model training, and evaluation.
-                </p>
+                <p class="experience-date">Jun. 2026 - Sep. 2026</p>
+                <p class="experience-role">LLM Coding Post-Training Intern, Mini Program Team</p>
+                <ol class="experience-details">
+                  <li><strong>Training.</strong> Conducted <strong>AI coding model
+                    post-training</strong> for generating complete WeChat Mini
+                    Programs from a single natural-language request, advancing
+                    <strong>CPT, agentic SFT, and agentic RL</strong>. Built an
+                    end-to-end training workflow for interactive greeting card
+                    generation, spanning data production, agent construction,
+                    verifier design, model training, and benchmark evaluation.</li>
+                  <li><strong>Data.</strong> Synthesized user requests, generated
+                    and quality-filtered training data, and designed curricula
+                    around task difficulty and model capabilities. Refined data
+                    selection criteria for training.</li>
+                  <li><strong>Verification.</strong> Improved <strong>RLVR
+                    verifiers and reward design</strong> through requirement
+                    review, code review, runtime functional checks, and visual
+                    assessment. Addressed incomplete functionality despite
+                    successful compilation and reward signals misaligned with
+                    user experience, guiding further training iterations.</li>
+                  <li><strong>Model fusion.</strong> Used <strong>multi-teacher
+                    on-policy distillation (MOPD)</strong> to combine five
+                    specialists across AI coding, user agents, and Mini Program
+                    usage into a single model, achieving near-specialist
+                    performance in each domain.</li>
+                </ol>
               </div>
             </article>
             <article class="experience-entry">
@@ -150,16 +154,32 @@
               />
               <div class="experience-content">
                 <h3>Didi · MPT</h3>
-                <p class="experience-date">Dec. 2025 - May 2026</p>
+                <p class="experience-date">Dec. 2025 - Jun. 2026</p>
                 <p class="experience-role">Elite Program Algorithm Intern, Supply-Demand Scheduling Strategy Team</p>
-                <p class="experience-desc">
-                  Optimized supply-demand forecasting models based on
-                  SparseTSF to address the high complexity of temporal
-                  dependency modeling in the original production system.
-                  Improved core business forecasting accuracy by 7%, reduced
-                  parameter count by 90%, and accelerated training by 5x,
-                  substantially speeding up model iteration and deployment.
-                </p>
+                <ol class="experience-details">
+                  <li><strong>Algorithms and models.</strong> Optimized
+                    <strong>SparseTSF-based forecasting models</strong> for
+                    long-term ride-hailing supply and demand across a nationwide
+                    regional grid, addressing short-term fluctuations,
+                    multi-scale periodicity, and dependencies on external
+                    factors. Improved forecasting accuracy on core business
+                    metrics by <strong>7%</strong>, with <strong>10x fewer
+                    parameters</strong> and <strong>5x faster training</strong>.</li>
+                  <li><strong>Training infrastructure.</strong> Optimized the
+                    training pipeline with distributed data parallelism (DDP),
+                    mixed precision, and the Muon optimizer, reducing training
+                    time on tens of billions of observations <strong>from days
+                    to hours</strong>.</li>
+                  <li><strong>Dataset.</strong> Built a ride-hailing dataset for
+                    open-source release covering <strong>200+ spatial areas
+                    and four years</strong> of historical data,
+                    capturing spatiotemporal coupling, multi-scale periodicity,
+                    and external drivers.</li>
+                  <li><strong>Benchmark.</strong> Established a ride-hailing
+                    supply-demand forecasting benchmark with <strong>30+ models</strong>
+                    spanning univariate, multivariate,
+                    exogenous-variable, and time series foundation models.</li>
+                </ol>
               </div>
             </article>
             <article class="experience-entry">
@@ -173,10 +193,9 @@
                 <p class="experience-date">Jul. 2021 - Sep. 2021</p>
                 <p class="experience-role">Backend Development Intern, R&amp;D Management Department</p>
                 <p class="experience-desc">
-                  Developed backend services in Go using Gin, Docker, Nginx,
-                  Redis, Kafka, and XORM. Built and maintained scheduled-task
-                  interfaces and developed CLI tools with Cobra for unified
-                  task management.
+                  Developed and maintained Go APIs for scheduled tasks based on
+                  business requirements, and built Cobra-based command-line
+                  tools to unify task management.
                 </p>
               </div>
             </article>
@@ -209,7 +228,7 @@
                   data-fullsrc="assets/sparsetsf-icml2024-oral-poster.png"
                 />
                 <div class="paper-content">
-                  <h3>SparseTSF: Modeling Long-term Time Series Forecasting with 1k Parameters</h3>
+                  <h3><span class="paper-name">SparseTSF:</span> Modeling Long-term Time Series Forecasting with 1k Parameters</h3>
                   <p class="paper-summary">
                     Introduces cross-period sparse forecasting to reduce model
                     parameters to as few as 1,000 while strengthening long-range
@@ -245,7 +264,7 @@
                   data-fullsrc="assets/cyclenet-neurips2024-spotlight-poster.png"
                 />
                 <div class="paper-content">
-                  <h3>CycleNet: Enhancing Time Series Forecasting through Modeling Periodic Patterns</h3>
+                  <h3><span class="paper-name">CycleNet:</span> Enhancing Time Series Forecasting through Modeling Periodic Patterns</h3>
                   <p class="paper-summary">
                     Explicitly models periodic patterns through a
                     periodic-residual decomposition design, improving periodic
@@ -280,7 +299,7 @@
                   data-fullsrc="assets/tqnet-icml2025-poster.png"
                 />
                 <div class="paper-content">
-                  <h3>Temporal Query Network for Efficient Multivariate Time Series Forecasting</h3>
+                  <h3><span class="paper-name">TQNet:</span> Temporal Query Network for Efficient Multivariate Time Series Forecasting</h3>
                   <p class="paper-summary">
                     Introduces temporal queries to capture global periodic
                     patterns, enabling more robust multivariate dependency
@@ -315,7 +334,7 @@
                   data-fullsrc="assets/segrnn-model-architecture.png?v=20260815"
                 />
                 <div class="paper-content">
-                  <h3>SegRNN: Segment Recurrent Neural Network for Long-Term Time Series Forecasting</h3>
+                  <h3><span class="paper-name">SegRNN:</span> Segment Recurrent Neural Network for Long-Term Time Series Forecasting</h3>
                   <p class="paper-summary">
                     Recasts RNN-based long-term forecasting through
                     segment-wise iterations and parallel multi-step
