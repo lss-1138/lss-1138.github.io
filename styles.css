@@ -626,6 +626,21 @@ button:focus-visible {
   line-height: 1.7;
 }
 
+.paper-details {
+  display: grid;
+  gap: 0.55rem;
+  padding-left: 1.1rem;
+}
+
+.paper-details strong {
+  color: var(--text);
+}
+
+.paper-details li::marker {
+  color: var(--text-soft);
+  font-size: 0.8em;
+}
+
 .link-row {
   display: flex;
   flex-wrap: wrap;

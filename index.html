@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260912" />
+    <link rel="stylesheet" href="styles.css?v=20260912-2" />
   </head>
   <body>
     <main class="page-shell container" id="top">
@@ -229,16 +229,26 @@
                 />
                 <div class="paper-content">
                   <h3><span class="paper-name">SparseTSF:</span> Modeling Long-term Time Series Forecasting with 1k Parameters</h3>
-                  <p class="paper-summary">
-                    Introduces cross-period sparse forecasting to reduce model
-                    parameters to as few as 1,000 while strengthening long-range
-                    dependency modeling, robustness, and generalization; now
-                    deployed in Didi ride-hailing demand-supply forecasting.
-                  </p>
+                  <ul class="paper-summary paper-details">
+                    <li><strong>Motivation.</strong> Investigates how far long-term
+                      forecasting can be simplified by exploiting periodic
+                      structure, without relying on large models.</li>
+                    <li><strong>Method.</strong> Introduces <strong>cross-period
+                      sparse forecasting</strong>, downsampling sequences into
+                      period-aligned subsequences to separate periodic structure
+                      from trend prediction.</li>
+                    <li><strong>Results.</strong> Achieves competitive accuracy
+                      with fewer than <strong>1,000 parameters</strong> in the
+                      reported configurations, with further experiments showing
+                      generalization under limited training data, low-quality
+                      observations, and cross-domain transfer. Subsequently
+                      applied to ride-hailing forecasting at Didi.</li>
+                  </ul>
                 </div>
               </div>
               <div class="link-row">
-                <a href="https://ieeexplore.ieee.org/abstract/document/11141354" target="_blank" rel="noreferrer">Paper</a>
+                <a href="https://proceedings.mlr.press/v235/lin24n.html" target="_blank" rel="noreferrer">Conference Paper</a>
+                <a href="https://ieeexplore.ieee.org/abstract/document/11141354" target="_blank" rel="noreferrer">Journal Extension</a>
                 <a href="https://github.com/lss-1138/SparseTSF" target="_blank" rel="noreferrer">GitHub</a>
                 <a href="https://drive.google.com/file/d/1pJ32EdIPgtRAYTQWYd768N6lPxtDx3sV/view?usp=drive_link" target="_blank" rel="noreferrer">Poster</a>
                 <a href="https://drive.google.com/file/d/1UJOwT0SOEoBsPVaLEBX4gMhNKZX7CF9q/view?usp=drive_link" target="_blank" rel="noreferrer">Slides</a>
@@ -265,11 +275,21 @@
                 />
                 <div class="paper-content">
                   <h3><span class="paper-name">CycleNet:</span> Enhancing Time Series Forecasting through Modeling Periodic Patterns</h3>
-                  <p class="paper-summary">
-                    Explicitly models periodic patterns through a
-                    periodic-residual decomposition design, improving periodic
-                    utilization, residual modeling, and overall interpretability.
-                  </p>
+                  <ul class="paper-summary paper-details">
+                    <li><strong>Motivation.</strong> Examines how explicitly
+                      learning recurring patterns can improve long-horizon
+                      forecasting beyond what is captured within individual
+                      input windows.</li>
+                    <li><strong>Method.</strong> Introduces <strong>Residual Cycle
+                      Forecasting (RCF)</strong>, learning channel-specific cycles
+                      shared across samples and using a linear layer or shallow
+                      MLP to predict the remaining residuals.</li>
+                    <li><strong>Results.</strong> Delivers strong forecasting
+                      performance with a lightweight architecture. RCF also serves
+                      as a plug-in component, improving results for existing
+                      forecasters such as <strong>PatchTST and iTransformer</strong>
+                      in the reported experiments.</li>
+                  </ul>
                 </div>
               </div>
               <div class="link-row">
@@ -300,11 +320,21 @@
                 />
                 <div class="paper-content">
                   <h3><span class="paper-name">TQNet:</span> Temporal Query Network for Efficient Multivariate Time Series Forecasting</h3>
-                  <p class="paper-summary">
-                    Introduces temporal queries to capture global periodic
-                    patterns, enabling more robust multivariate dependency
-                    learning and stronger multivariate forecasting performance.
-                  </p>
+                  <ul class="paper-summary paper-details">
+                    <li><strong>Motivation.</strong> Addresses unreliable
+                      inter-variable correlations estimated from individual
+                      input windows, where noise, missing values, and outliers
+                      can distort dependencies.</li>
+                    <li><strong>Method.</strong> Introduces <strong>Temporal
+                      Query</strong>, using periodically shifted learnable queries
+                      together with input-derived keys and values to combine
+                      global correlation patterns with local observations.</li>
+                    <li><strong>Results.</strong> Pairs a <strong>single attention
+                      layer with a shallow MLP</strong>, achieving strong overall
+                      results across <strong>12 real-world datasets</strong> while
+                      approaching the measured efficiency of linear forecasters
+                      in the evaluated settings.</li>
+                  </ul>
                 </div>
               </div>
               <div class="link-row">
@@ -335,13 +365,21 @@
                 />
                 <div class="paper-content">
                   <h3><span class="paper-name">SegRNN:</span> Segment Recurrent Neural Network for Long-Term Time Series Forecasting</h3>
-                  <p class="paper-summary">
-                    Recasts RNN-based long-term forecasting through
-                    segment-wise iterations and parallel multi-step
-                    forecasting, enabling a single-layer GRU to achieve strong
-                    accuracy while reducing training time and memory usage by
-                    more than 78%.
-                  </p>
+                  <ul class="paper-summary paper-details">
+                    <li><strong>Motivation.</strong> Revisits RNNs for long-term
+                      forecasting by addressing excessive recurrent steps and
+                      error accumulation in recursive decoding.</li>
+                    <li><strong>Method.</strong> Combines <strong>segment-wise
+                      encoding</strong> with <strong>Parallel Multi-step
+                      Forecasting (PMF)</strong>, processing subsequences rather
+                      than individual time points and predicting future segments
+                      in parallel.</li>
+                    <li><strong>Results.</strong> Demonstrates competitive
+                      forecasting with a simple GRU-based architecture. The arXiv
+                      study reports over <strong>78% lower average training
+                      time</strong> and <strong>82% lower average peak GPU
+                      memory</strong> than PatchTST in its efficiency comparison.</li>
+                  </ul>
                 </div>
               </div>
               <div class="link-row">
