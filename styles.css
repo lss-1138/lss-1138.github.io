@@ -802,6 +802,14 @@ button:focus-visible {
   font-family: Georgia, "Times New Roman", serif;
 }
 
+.experience-desc + .education-honors {
+  margin-top: 0.35rem;
+}
+
+.education-honors strong {
+  color: var(--text);
+}
+
 .experience-details {
   margin: 0.85rem 0 0;
   padding-left: 1.1rem;
@@ -1040,8 +1048,7 @@ ol.experience-details li::marker {
     gap: 0.45rem;
   }
 
-  .experience-logo,
-  .experience-logo-round {
+  .experience-logo:not(.experience-logo-round) {
     max-width: 92px;
   }
 
